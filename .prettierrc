@@ -1,0 +1,9 @@
+{
+  "prettier/prettier": [
+    {
+      "usePrettierrc": false
+    }
+  ],
+  "singleQuote": true,
+  "trailingComma": "all"
+}

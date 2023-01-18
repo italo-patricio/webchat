@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mongodb:
+    container_name: mongodb_whatsapp
+    image: mongo
+    restart: always
+    volumes:
+      - ./data/mongodb:/data/db
+    ports:
+      - 26712:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: '*%p@$$w0Rd%*'
+    expose:
+      - 26712

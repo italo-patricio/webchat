@@ -1,0 +1,25 @@
+### SAVE JOB
+POST http://localhost:3000/job/save HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "italo-job-30-sec",
+    "second": "*/30"
+}
+
+### LIST JOBS
+GET http://localhost:3000/job/all HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "italo-job-10-sec",
+    "second": "*/10"
+}
+
+### DELETE JOB
+DELETE http://localhost:3000/job HTTP/1.1
+Content-Type: application/json
+
+{
+    "nameJob": "italo-job-10-sec"
+}
